@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\ContactController;
+use Illuminate\Contracts\Cache\Store;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -21,8 +22,12 @@ Route::get('/', function () {
 
 Route::resource('contact', ContactController::class)->middleware(['auth']);
 
-Route::get('/dashboard', function () {
-    return view('dashboard');
-})->middleware(['auth'])->name('dashboard');
+Route::post('/contectstore', "App\Http\Controllers\ContactController@form");
+
+
+
+
+
+
 
 require __DIR__.'/auth.php';

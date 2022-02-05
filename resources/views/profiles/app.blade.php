@@ -46,13 +46,12 @@
                     <a href="#"
                         class="py-2 text-sm text-gray-700 dark:text-gray-100 bg-gray-200 dark:bg-gray-800 rounded">Overview</a>
                     <a href="#"
-                        class="mt-3 py-2 text-sm text-gray-600 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-100  hover:bg-gray-200 dark:hover:dark:bg-blue-800 rounded">Tickets</a>
+                        class="mt-3 py-2 text-sm text-gray-600 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-100
+                         hover:bg-gray-200 dark:hover:dark:bg-blue-800 rounded">React.js</a>
                     <a href="#"
-                        class="mt-3 py-2 text-sm text-gray-600 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-100 hover:bg-gray-200 dark:hover:dark:bg-blue-800 rounded">Ideas</a>
-                    <a href="#"
-                        class="mt-3 py-2 text-sm text-gray-600 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-100 hover:bg-gray-200 dark:hover:dark:bg-blue-800 rounded">Contacts</a>
-                    <a href="#"
-                        class="mt-3 py-2 text-sm text-gray-600 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-100 hover:bg-gray-200 dark:hover:dark:bg-blue-800 rounded">Settings</a>
+                        class="mt-3 py-2 text-sm text-gray-600 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-100
+                        hover:bg-gray-200 dark:hover:dark:bg-blue-800 rounded">Node.js</a>
+
                 </nav>
             </div>
 
@@ -75,7 +74,7 @@
                     @if (Route::has('login'))
                         <div class="hidden fixed top-0 right-0 px-6 py-4 sm:block">
                             @auth
-                                <a href="{{ url('/dashboard') }}" class="text-sm text-gray-700 dark:text-gray-500 underline">Dashboard</a>
+                                <a href="{{ url('contact') }}" class="text-sm text-gray-700 dark:text-gray-500 underline">Dashboard</a>
                             @else
                                 <a href="{{ route('login') }}" class="text-sm text-gray-700 dark:text-gray-500 underline">Log in</a>
 

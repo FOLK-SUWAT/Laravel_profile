@@ -14,7 +14,7 @@
             <span class="mt-2">folkqq@houtlook.com</span>
         </a>
     </div>
-    <form method="POST" action="{{ route('contact.store') }}">
+    <form method="POST" action="{{ url('contectstore')  }}">
         @csrf
     <div class="mt-6 ">
         <div class="items-center -mx-2 md:flex">
